@@ -5,21 +5,17 @@ body {
 
 #container {
    width: 100.6%;
-   height: 200px;
-   margin: auto;
    right: 0;
-   padding: -10px;
    margin: 0;
 }
 
 #list-div {
    background-color: #CBE86B;
-   width: 350px;
-   height: 620px;
-   float: left;
+   height: 600px;
+   width: 360px;
+   margin-top: -25px;
    margin-left: -10px;
-   margin-top: -8px;
-   float: left;
+   padding-top: 50px;
    text-align: center;
 }
 
@@ -30,26 +26,19 @@ body {
    padding: 0;
 }
 
-#frame {
-   display: block;
-   margin: auto;
+#frame-div {
+   float: right;
+   margin-top: 15px;
+   width: 1018px;
+   height: 615px;
+   background-color: #1C140D;
 }
 
 #frame-div-ins {
    position: relative;
-   float: right;
-   top: 20%;
-   margin-right: 325px;
 }
 
-#frame-div {
-   width: 100%;
-   height: 615px;
-   right: -10px;
-   margin-right: -10px;
-   margin-top: -8px;
-   background-color: #1C140D;
-}
+#frame {}
 
 #foot {
    position: fixed;
@@ -57,5 +46,5 @@ body {
    left: 0;
    background-color: #F2E9E1;
    width: 100%;
-   text-align: center; 
+   text-align: center;
 }

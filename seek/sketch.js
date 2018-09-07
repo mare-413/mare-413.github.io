@@ -2,7 +2,7 @@ var popu;
 var debug = true;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   popu = new Population(50, 65, 6);
 }
