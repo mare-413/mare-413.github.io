@@ -12,11 +12,11 @@ function launch(doc) {
    f.onload = () => {
       f.height = f.contentWindow.height + 20;
       f.width = f.contentWindow.width + 20;
+      var fd = document.getElementById("frame-div-ins");
+      var st = "padding-left: ";
+      st += (510 - (f.contentWindow.width + 20) / 2) + "px; padding-top: ";
+      st += (290 - (f.contentWindow.height + 20) / 2) + "px;";
+      //fd.style = "padding-left: " + (340 + 500 - (f.contentWindow.width + 20) / 2) + "px; " + "padding-top: " + (615 / 2 - (f.contentWindow.height + 20) / 2) + "px";
+      fd.style = st;
    }
-   var fd = document.getElementById("frame-div-ins");
-   var st = "padding-left: ";
-   st += (510 - (f.contentWindow.width + 20) / 2) + "px; padding-top: ";
-   st += (290 - (f.contentWindow.height + 20) / 2) + "px;";
-   //fd.style = "padding-left: " + (340 + 500 - (f.contentWindow.width + 20) / 2) + "px; " + "padding-top: " + (615 / 2 - (f.contentWindow.height + 20) / 2) + "px";
-   fd.style = st;
 }
