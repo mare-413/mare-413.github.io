@@ -1,18 +1,26 @@
+html {
+   height: 100%;
+   width: -webkit-fill-available;
+}
+
 body {
    font-family: roboto, sans-serif;
    letter-spacing: 3px;
+   height: 100%;
+   width: -webkit-fill-available;
+   margin: 0;
 }
 
 #container {
-   width: 100.6%;
+   width: -webkit-fill-available;
+   height: -webkit-fill-available;
    right: 0;
    margin: 0;
 }
 
 #list-div {
    background-color: #CBE86B;
-   height: 600px;
-   width: 360px;
+   height: 100%;
    margin-top: -25px;
    margin-left: -10px;
    padding-top: 50px;
@@ -29,8 +37,8 @@ body {
 #frame-div {
    float: right;
    margin-top: 15px;
-   width: 1018px;
-   height: 615px;
+   width: 75%;
+   height: -webkit-fill-available;
    background-color: #1C140D;
 }
 
