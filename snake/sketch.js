@@ -8,10 +8,10 @@ var square = 10;
 
 var active;
 
-var look = false;
+var look = true;
 
 function setup() {
-   createCanvas(grid * square, grid * square);
+   createCanvas(grid * square + 200, grid * square + 200);
    rectMode(CENTER, CENTER);
    frameRate(30);
 
@@ -31,7 +31,7 @@ function draw() {
       show(board);
       board.changeDir();
       if (!board.run()) {
-         board = new Board(popu.universalDna);
+         board = popu.universalDna ? new Board(popu.universalDna) : new Board(popu.agents[0].dna);
       }
    } else {
       popu.run();
@@ -44,6 +44,8 @@ function draw() {
 function show(b_) {
    active = b_;
    stroke(0);
+   push();
+   translate(100, 100);
    for (var i = 0; i < b_.snake.length; i++) {
       fill(100);
       if (i == 0) fill(255);
@@ -72,8 +74,20 @@ function show(b_) {
    fill(255, 0, 0);
    rect(b_.food.x * square, b_.food.y * square, square, square);
 
+   var gq = grid * square;
+
+   stroke(255);
+   line(0, 0, 0, gq);
+   line(gq, 0, gq, gq);
+
+   pop();
+
    fill(255);
-   text(b_.frames + " - " + b_.lifetime + " - " + b_.score, 50, height - 20)
+   textSize(15);
+   text("Sum: " + popu.sum + " | LocalFit: " + popu.localFitness + " | BestFitness: " + popu.universalFitness + " | Gen: " + popu.generation, 100, 35);
+   text("CurScore: " + popu.localScore + " | BestScore: " + popu.bestScore, 100, 55);
+   text("MR: " + popu.set.mr + " | Cross: " + popu.set.cross + " | Mut: " + popu.set.mut + " | Elite: " + popu.set.elite + " | Innov: " + popu.set.innovation, 100, 75);
+   text("Frames: " + b_.frames + " - Lifetime: " + b_.lifetime + " - Score: " + b_.score, 100, gq + 140);
 }
 
 function keyPressed() {
@@ -96,10 +110,7 @@ function keyPressed() {
          active.head.ny = 0;
          break;
    }*/
-   if (key == "D") {
-      console.log("Sum: " + popu.sum + " | LocalFit: " + popu.localFitness + " | BestFitness: " + popu.universalFitness + " | Gen: " + popu.generation);
-      console.log("CurScore: " + popu.localScore + " | BestScore: " + popu.bestScore + " | MutRate: " + popu.set.mr + " | Set: " + popu.set.cross + "-" + popu.set.mut);
-   } else if (key == "L") {
+   if (key == "T") {
       if (look) look = false;
       else look = true;
    }

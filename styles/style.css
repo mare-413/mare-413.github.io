@@ -27,9 +27,9 @@ body {
    text-align: center;
 }
 
-#list {
+.list {
    list-style-type: none;
-   line-height: 30px;
+   line-height: 25px;
    margin: 0;
    padding: 0;
 }
