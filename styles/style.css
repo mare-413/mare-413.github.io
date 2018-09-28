@@ -20,11 +20,14 @@ body {
 
 #list-div {
    background-color: #CBE86B;
-   height: 100%;
    margin-top: -25px;
-   margin-left: -10px;
    padding-top: 50px;
    text-align: center;
+   overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+   display: none;
 }
 
 .list {
