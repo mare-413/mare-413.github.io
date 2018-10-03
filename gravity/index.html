@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PS - Gravity</title>
+  <script src="../libraries/p5.js" type="text/javascript"></script>
+
+  <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="../libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    canvas {
+      vertical-align: top;
+    }
+    
+    input[type=range] {
+      -webkit-appearance: none;
+      margin: 10px 0;
+      width: 100px;
+    }
+    
+    input[type=range]:focus {
+      outline: none;
+    }
+    
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #fffff;
+      border-radius: 50px;
+      border: 0px solid #000000;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #ffffff;
+      height: 12px;
+      width: 12px;
+      border-radius: 25px;
+      background: #ffffff;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -5px;
+    }
+    
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #ffffff;
+    }
+    
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #ffffff;
+      border-radius: 50px;
+      border: 0px solid #000000;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #ffffff;
+      height: 17px;
+      width: 18px;
+      border-radius: 25px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    
+    input[type=range]::-ms-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    
+    input[type=range]::-ms-fill-lower {
+      background: #ffffff;
+      border: 0px solid #000000;
+      border-radius: 100px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    
+    input[type=range]::-ms-fill-upper {
+      background: #ffffff;
+      border: 0px solid #000000;
+      border-radius: 100px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    
+    input[type=range]::-ms-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 1px solid #ffffff;
+      height: 17px;
+      width: 18px;
+      border-radius: 25px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    
+    input[type=range]:focus::-ms-fill-lower {
+      background: #ffffff;
+    }
+    
+    input[type=range]:focus::-ms-fill-upper {
+      background: #ffffff;
+    }
+    
+    .radio input[type=radio] {
+      display: none;
+    }
+    
+    .radio label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 16px;
+      margin-right: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    
+    .radio label:before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #ffffff;
+      margin-right: 5px;
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+    }
+    
+    .radio label:before {
+      border-radius: 9px;
+    }
+    
+    .radio input[type=radio]:checked + label:before {
+      content: fill;
+      position: absolute;
+      color: #1e1e1e;
+      font-size: 40px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      /*     text-align: center; */
+      line-height: 7 px;
+      width: 12px;
+      height: 12px;
+      box-sizing: border-box;
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -19,7 +19,7 @@ body {
 }
 
 #list-div {
-   background-color: #CBE86B;
+   background-image: linear-gradient(to bottom right, #16ff92, #1cffca);
    margin-top: -25px;
    padding-top: 50px;
    text-align: center;
@@ -42,7 +42,7 @@ body {
    margin-top: 15px;
    width: 75%;
    height: -webkit-fill-available;
-   background-color: #1C140D;
+   background-color: #110700;
 }
 
 #frame-div-ins {
@@ -55,7 +55,7 @@ body {
    position: fixed;
    bottom: 0;
    left: 0;
-   background-color: #F2E9E1;
+   background-color: #fff3f2;
    width: 100%;
    text-align: center;
 }

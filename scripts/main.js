@@ -8,6 +8,8 @@ function onLoad() {
    document.getElementById("blob").addEventListener("click", () => launch("blob"));
    document.getElementById("digitrec").addEventListener("click", () => launch("digitrec", true));
    document.getElementById("shaperec").addEventListener("click", () => launch("shaperec", true));
+   document.getElementById("gravity").addEventListener("click", () => launch("gravity"));
+   document.getElementById("life").addEventListener("click", () => launch("life"));
    document.getElementById("shortpath").addEventListener("click", () => launch("shortpath"));
 }
 
